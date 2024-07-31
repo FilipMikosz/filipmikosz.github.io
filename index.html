@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>Peka</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+        <header class="index">
+            <img src="src/img/peka_logo.png" alt="peka logo">
+        </header>
+
+        <main>
+            <h2 id="name">FILIP MIKOSZ</h2>
+            <a href="html/ticket_control.html" class="img-qr-container">
+                <img src="src/img/dawid.jpg" class="profile-img img" alt="profile picture" >
+                <img src="src/img/qr_code.png" class="qr-code" alt="qr code" >
+            </a>
+            <a class="btn" href="html/ticket_control.html">Ticket control</a>
+            <span class="time"></span>
+            <span>PEKA account number</span>
+            <h1 class="account-number">00560469</h1>
+        </main>
+
+        <nav>
+            <a class="nav-item" href="index.html">
+                <img src="src/icons/home_selected.jpg" alt="">
+                <span>Start</span>
+            </a>
+            <a class="nav-item" href="html/my_account.html">
+                <img src="src/icons/my_account.svg" alt="">
+                <span>My account</span>
+            </a>
+            <a class="nav-item" href="html/transaction_history.html">
+                <img src="src/icons/history.svg" alt="">
+                <span>Transaction history</span>
+            </a>
+            <div class="nav-item">
+                <img src="src/icons/buy_ticket.svg" alt="">
+                <span>Buy tickets</span>
+            </div>
+            <div class="nav-item">
+                <img src="src/icons/contact.svg" alt="">
+                <span>Contact</span>
+            </div>
+        </nav>
+
+        <script src="js/script.js"></script>
+        <script>
+
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('/sw.js', { scope: '/' });
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                let person = localStorage.getItem('face');
+
+                document.querySelector('.img').src = `src/img/${person}`;
+                document.querySelector('#name').textContent =
+                    person === 'dawid.jpg'
+                        ? 'DAWID BARTNICZAK'
+                        : 'FILIP MIKOSZ'
+            });
+
+        </script>
+    </body>
+</html>

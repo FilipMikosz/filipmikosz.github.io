@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>My account</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style2.css">
+    </head>
+    <body>
+        <header class="account">
+            <a href="../index.html"><img src="../src/icons/chevron-left-solid.svg" alt="back"></a>
+            <h3>Your account</h3>
+        </header>
+        <main>
+            <div class="account-grid" style="grid-template-rows:auto auto 1fr">
+                <div class="account-portlet">
+                    <div class="content-frame-inner">
+                        <div class="display-flex flex-space-between page-header">
+                            <div class="display-flex flex-vcenter">
+                                <span class="font-15rem notranslate" id="name">DAWID BARTNICZAK</span>
+                            </div>
+                        </div>
+                        <table class="account-table mt-10">
+                            <tr>
+                                <td class="font-heavy-bold row-title">PEKA account</td>
+                                <td colspan="2">00560469</td>
+                            </tr>
+            
+                            <td></td><td><navlink tabindex="0" class="link font-bold pointer"><a class="link" href="choose_photo.html">Edit information</a></navlink></td></tr>
+                            <td></td><td><navlink tabindex="0" class="link font-bold pointer">Change password</navlink></td></tr><tr>
+                            <td></td><td><navlink tabindex="0" class="link font-bold pointer">Issues and requests</navlink></td></tr>
+                            <td></td><td><navlink tabindex="0" class="link font-bold pointer">Refresh data</navlink></td></tr>
+                            <td></td><td><navlink tabindex="0" class="link font-bold pointer">Informations</navlink></td></tr>
+                            <tr><td colspan="2"></td></tr>
+                        </table>
+                        <div class="divider-small"></div>
+                        <table class="account-table mt-20">
+                            <tr>
+                                <td class="font-heavy-bold row-title">Tickets</td>
+                                <td class="pr-10">
+                                    <div>150 dni<br>Okres ważności: od 2024-04-25 08:16:03 do 2024-09-21<br>23:59:59</div>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- <div class="divider-small"></div>
+                        <table class="account-table mt-20">
+                            <tr>
+                                <td class="font-heavy-bold row-title">Reductions</td>
+                                <td class="pr-10">
+                                    <div>dziecko lub młodzież między 7 a 18 rokiem życia</div>
+                                    <div class="mb-10">Validity period: from 2014-09-08 to 2024-01-10</div>
+                                </td>
+                            </tr>
+                        </table> -->
+                        <div class="pb-20">
+                            <div class="divider-small"></div>
+                            <table class="account-table mt-10">
+                                <tr>
+                                    <td class="font-heavy-bold row-title">Bonus program saldo</td>
+                                    <td class="pr-10">4480</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="only-mobile mobile-separator"></div>
+                    </div>
+                </div>
+                <div class="account-portlet">
+                    <div class="content-frame-inner">
+                        <table class="account-table mt-10">
+                            <tr>
+                                <td class="font-heavy-bold row-title">PEKA Card</td>
+                                <td>
+                                    <div>2828126895</div>
+                                    <div>Active, name card</div>
+                                    <div>0,24 zł (0,24 points)</div>
+                                    <div>
+                                        <div>Last update of tPurse balance: 2023-08-10 20:39:46</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <navlink tabindex="0" class="link font-bold pointer">Restrict card</navlink>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="account-portlet">
+                    <div class="content-frame-inner">
+                        <div class="only-mobile mobile-separator"></div>
+                        <table class="account-table pt-20 pb-20">
+                            <tr>
+                                <td class="font-heavy-bold row-title">PEKA App</td>
+                                <td><div>Phone</div></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>00000058003</td>
+                            </tr>
+                            <tr>
+                                <td class="font-heavy-bold row-title"></td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td class="font-heavy-bold row-title"></td>
+                                <td><navlink tabindex="0" class="link font-bold pointer">Change PIN</navlink></td>
+                            </tr>
+                            <tr>
+                                <td class="font-heavy-bold row-title"></td>
+                                <td><navlink tabindex="0" class="link font-bold pointer">Logout from device</navlink></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="mb-150 except-desktop"></div>
+            </div>
+        </main>
+        <nav>
+            <a class="nav-item" href="../index.html">
+                <img src="../src/icons/home.jpg" alt="">
+                <span>Start</span>
+            </a>
+            <a class="nav-item" href="my_account.html">
+                <img src="../src/icons/my_account_selected.svg" alt="">
+                <span>My account</span>
+            </a>
+            <a class="nav-item" href="transaction_history.html">
+                <img src="../src/icons/history.svg" alt="">
+                <span>Transaction history</span>
+            </a>
+            <div class="nav-item">
+                <img src="../src/icons/buy_ticket.svg" alt="">
+                <span>Buy tickets</span>
+            </div>
+            <div class="nav-item">
+                <img src="../src/icons/contact.svg" alt="">
+                <span>Contact</span>
+            </div>
+        </nav>
+
+        <script>
+
+            document.addEventListener('DOMContentLoaded', () => {
+                let person = localStorage.getItem('face');
+
+                document.querySelector('#name').textContent =
+                    person === 'dawid.jpg'
+                        ? 'DAWID BARTNICZAK'
+                        : 'FILIP MIKOSZ'
+            });
+
+        </script>
+    </body>
+</html>

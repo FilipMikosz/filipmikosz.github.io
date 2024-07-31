@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>Ticket control</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <section>
+                    <div>
+                        <span>PEKA account number</span>
+                        <h1 class="account-number">11122233</h1>
+                    </div>
+                    <img src="../src/img/qr_code.png" alt="qr-code" class="large-image">
+                    <span class="time"></span>
+                    <a class="btn" href="../index.html">Back</a>
+                </section>
+                <section>
+                    <div>
+                        <span>PEKA account number</span>
+                        <h1 class="account-number">11122233</h1>
+                    </div>
+                    <img src="../src/img/mikolaj.jpg" alt="profile picture" class="large-image img">
+                    <a class="btn" href="../index.html">Back</a>
+                </section>
+            </div>
+        </main>
+        
+        <script src="../js/script.js"></script>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.img').src = `../src/img/${localStorage.getItem('face')}`;
+            });
+
+        </script>
+    </body>
+</html>

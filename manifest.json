@@ -1,0 +1,22 @@
+{
+    "name": "PEKA",
+    "short_name": "PEKA",
+    "start_url": "/",
+    "orientation": "portrait",
+    "display": "standalone",
+    "background_color": "#45484A",
+    "theme_color": "#45484A",
+    "description": "Fake PEKA application :)",
+    "icons": [
+        {
+            "src": "src/icons/icon192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "src/icons/icon512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

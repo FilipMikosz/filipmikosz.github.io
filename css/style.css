@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto,'Open Sans', sans-serif,'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: #45484A;
+}
+.nav-item img {
+    height: 50px;
+    width: auto;
+    margin-bottom: 7px;
+}
+.nav-item span {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+header.index {
+    width: 100%;
+    height: 75px;
+    border-bottom: 8px solid #43861D;
+    background: #45484A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header.index img {
+    height: 60%;
+    width: auto;
+}
+
+header.account {
+    width: 100%;
+    height: 100px;
+    background: #DDDDDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #45484A;
+    position: relative;
+}
+header.account a {
+    position: absolute;
+    left: 30px;
+
+}
+header.account a img {
+    height: 25px;
+    width: auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-weight: bold;
+}
+
+.img-qr-container {
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    height: 100%;
+}
+
+.qr-code {
+    height: 100%;
+}
+
+.time {
+    margin: 10px 0;
+}
+
+.account-number {
+    margin: 0;
+}
+
+.container {
+    width: 200%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.container section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container section:nth-child(1) {
+    margin-left: 27.5%;
+}
+.container section:nth-child(2) {
+    margin-left: 5%;
+    padding-right: 5%;
+}
+
+.container section:nth-child(2) .btn {
+    margin-top: 20px;
+}
+
+.container section div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container section div .account-number {
+    font-size: 2em;
+}
+
+.container section .time {
+    margin: 20px 0;
+}
+
+.large-image {
+    width: 90vw;
+    height: auto;
+}
+
+.btn {
+    font-size: 1.3rem !important;
+    white-space: nowrap;
+    padding: 4vw 25px 4vw 25px !important;
+    border-radius: 13px !important;
+    border: 1px solid #43861D;
+    cursor: pointer;
+    max-height: 70px !important;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-right: 5px;
+    min-height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #43861D;
+    color: #fff;
+    text-decoration: none;
+}
